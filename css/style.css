@@ -1,0 +1,11 @@
+.hero {
+    position: fixed;
+}
+
+
+.card .card-body {
+    position: relative;
+    padding: 50px;
+    width: 90%x;
+    margin: 50, 50, 0, 50;
+}
