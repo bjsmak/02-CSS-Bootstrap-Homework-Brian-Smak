@@ -2,23 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inconsolata', sans-serif;
 }
 
 
 
 
 #navigation-bar-color * {
-    color: rgb(113, 162, 185);
+    color: #ffffff;
 }
 
-.navbar-color {
-    background-color: rgb(78, 78, 78);
+.bar-color {
+    background-color: #43a3b3;
     height: 70px;
 }
 
 .navbar-brand, .navbar {
     font-size: 30px;
-    font-family: 'Inconsolata', sans-serif;
 }
 
 .nav-item {
@@ -27,7 +27,7 @@
 
 /*********GENERAL/MAIN BACKGROUND******/
 body {
-    background-image: url(../assets/pexels-felix-mittermeier-956999.jpg);
+    background-image: url(../assets/pexels-markus-spiske-360591.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -40,10 +40,10 @@ body {
 
 
 /********About Me Section************/
-.container {
+.main-section {
     width: 90%;
     position: relative;
-    background-color: rgb(78, 78, 78);
+    background-color: #e8a87c;
     margin:0;
     top: 100px;
 }
@@ -56,8 +56,7 @@ body {
 }
 
 h1, p {
-    font-family: 'Inconsolata', sans-serif;
-    color: rgb(113, 162, 185);
+    color: #ffffff;
 }
 
 p {
@@ -72,9 +71,10 @@ h1 {
 .portfolio {
     width: 70%;
     position: relative;
-    background-color: rgb(104, 104, 104);
+    background-color: #e8a87c;
     margin:0;
     top: 100px;
+    bottom: 100px;
 }
 
 .portfolio .row .col img {
@@ -89,4 +89,24 @@ h1 {
 .contact-form-custom {
     width: 400px;
     padding-bottom: 20px;
+    background-color: #e8a87c;
+    margin-top: 100px;
+}
+
+
+/*****Footer********/
+
+.footer-custom {
+    height: 80px;
+    font-size: 20px;
+    position: relative;
+    color: #ffffff;
+}
+
+.icon-custom {
+    text-decoration: none;
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    color: #fff;
 }
