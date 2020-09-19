@@ -10,6 +10,7 @@
 
 #navigation-bar-color * {
     color: #E9C46A;
+    z-index: 1;
 }
 
 .bar-color {
@@ -51,7 +52,7 @@ body {
 .container img {
     margin-right: 20px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 400px;
     height: auto;
 }
@@ -92,6 +93,10 @@ h1 {
     padding-bottom: 20px;
     background-color: #E76F51;
     margin-top: 100px;
+}
+
+h2 {
+    color: #E9C46A;
 }
 
 
@@ -152,10 +157,19 @@ h1 {
         text-align: center;
     }
 
-    /***INDEX***/
 
-    .main-section {
-        margin-top: 0;
+    /***CONTACT MEDIA SECTION***/
+    .contact-form-custom {
+        margin-top: 70px;
+        width: 90%;
     }
 
+ }
+
+ @media screen and (max-width: 767.98px) {
+    p {
+        padding: 15px;
+        font-size: 12px;
+        margin-bottom: auto;
+    }
  }
