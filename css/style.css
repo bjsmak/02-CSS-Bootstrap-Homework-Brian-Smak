@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Exo', sans-serif;
+}
+
+a {
+    color: white;
 }
 
 
@@ -10,13 +14,13 @@
 
 /***Needed for displayed nav bar color****/
 #navigation-bar-color * {
-    color: #E9C46A;
+    color: #C6C5B9;
     z-index: 1;
 }
 
 /***Needed for collapseable nav bar background color / font styling****/
 .bar-color, .navbar-collapse {
-    background-color: #155851;
+    background-color: #475657;
     height: auto;
 }
 
@@ -30,7 +34,7 @@
 
 /*********GENERAL/MAIN BACKGROUND******/
 body {
-    background-image: url(../assets/pexels-markus-spiske-360591.jpg);
+    background-color: #62929E;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -38,7 +42,7 @@ body {
 }
 
 #hr-color {
-    background-color: #E9C46A;
+    background-color: #C6C5B9;
     margin: 0 0 5px 0;
 }
 
@@ -47,41 +51,63 @@ body {
 .main-section {
     width: 90%;
     position: relative;
-    background-color: #da370f;
+    background-color: #4A6D7C;
     margin: 20px 0 90px 0;
 }
 
 .container img {
     margin: 5px 10px 10px 0;
-    width: 350px;
-    height: auto;
+    width: auto;
+    height: 350px;
+}
+
+.profile {
+    border-radius: 50%;
 }
 
 h1, p {
-    color: #E9C46A;
+    font-family: 'Exo';
+    color: #C6C5B9;
 }
 
 p {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 h1 {
     text-align: center;
 }
 
+.btn-primary {
+    background-color: #C6C5B9;
+    color: #475657;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 10px;
+}
+
 /********Portfolio Section************/
 .portfolio {
     width: 70%;
     position: relative;
-    background-color: #da370f;
+    background-color: #4A6D7C;
     margin:20px 0 120px 0;
 }
 
 .portfolio .row .col img {
     display: block;
     margin: 0 auto; 
-    padding-top: 10%;
     padding-bottom: 10%;
+}
+
+.portfolioHeader {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#dayPlanImg, #codeQuizImg, #hopsImg, #passwordImg {
+    width: 350px;
+    height: auto;
 }
 
 /******Contact Me Section**********/
@@ -89,12 +115,12 @@ h1 {
 .contact-form-custom {
     width: 400px;
     padding-bottom: 20px;
-    background-color: #da370f;
+    background-color: #4A6D7C;
     margin-top: 20px;
 }
 
 h2 {
-    color: #E9C46A;
+    color: #C6C5B9;
 }
 
 
@@ -104,7 +130,7 @@ h2 {
     height: 70px;
     font-size: 15px;
     float: right;
-    color: #E9C46A;
+    color: #C6C5B9;
     margin-top: 10px;
 }
 
@@ -114,7 +140,7 @@ h2 {
     margin-bottom: 10px;
     margin-left: auto;
     margin-top: 5px;
-    color: #E9C46A;
+    color: #C6C5B9;
 }
 
 
@@ -136,14 +162,14 @@ h2 {
       }
 
     /***Resize font and images for readability on smaller devices****/
-    .container img {
+    .container img, #dayPlanImg, #codeQuizImg, #hopsImg, #passwordImg {
         width: 200px;
         height: auto;
         padding-left: 5px;
         margin-bottom: 10px;
     }
 
-    p {
+    .mainSummary {
         padding: 15px;
         font-size: 12px;
         margin-bottom: auto;
@@ -170,7 +196,7 @@ h2 {
  }
 
  @media screen and (max-width: 767.98px) {
-    p {
+    .mainSummary {
         padding: 15px;
         font-size: 12px;
         margin-bottom: auto;
