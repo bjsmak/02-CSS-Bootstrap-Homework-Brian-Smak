@@ -1,4 +1,5 @@
-# 02-CSS-Bootstrap-Homework-Brian-Smak
+# Portfolio
+<a href="https://bjsmak.github.io/Portfolio/">LINK HERE</a>
 
 Using CSS and Bootstrap functionality, the assignment was given to create a portfolio page with the following criteria <p>
 *A bio page, including a list of links to social media<p>
