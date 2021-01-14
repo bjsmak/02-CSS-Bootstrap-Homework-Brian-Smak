@@ -20,7 +20,7 @@ a {
 
 /***Needed for collapseable nav bar background color / font styling****/
 .bar-color, .navbar-collapse {
-    background-color: #475657;
+    background-color: #0D0221;
     height: auto;
 }
 
@@ -34,7 +34,7 @@ a {
 
 /*********GENERAL/MAIN BACKGROUND******/
 body {
-    background-color: #62929E;
+    background-color: #26408B;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -51,12 +51,13 @@ body {
 .main-section {
     width: 90%;
     position: relative;
-    background-color: #4A6D7C;
+    background-color: #0F084B;
     margin: 20px 0 90px 0;
+    padding-bottom: 150px;
 }
 
 .container img {
-    margin: 5px 10px 10px 0;
+    margin: 5px 10px 10px 70px;
     width: auto;
     height: 350px;
 }
@@ -90,7 +91,7 @@ h1 {
 .portfolio {
     width: 70%;
     position: relative;
-    background-color: #4A6D7C;
+    background-color: #0F084B;
     margin:20px 0 120px 0;
 }
 
@@ -105,7 +106,7 @@ h1 {
     font-weight: 400;
 }
 
-#dayPlanImg, #codeQuizImg, #hopsImg, #passwordImg {
+#dayPlanImg, #codeQuizImg, #hopsImg, #memeImg {
     width: 350px;
     height: auto;
 }
@@ -115,7 +116,7 @@ h1 {
 .contact-form-custom {
     width: 400px;
     padding-bottom: 20px;
-    background-color: #4A6D7C;
+    background-color: #0F084B;
     margin-top: 20px;
 }
 
@@ -125,6 +126,8 @@ h2 {
 
 
 /*****Footer********/
+
+
 
 .footer-custom {
     height: 70px;
@@ -162,7 +165,7 @@ h2 {
       }
 
     /***Resize font and images for readability on smaller devices****/
-    .container img, #dayPlanImg, #codeQuizImg, #hopsImg, #passwordImg {
+    .container img, #dayPlanImg, #codeQuizImg, #hopsImg, #memeImg {
         width: 200px;
         height: auto;
         padding-left: 5px;
