@@ -12,65 +12,119 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Brian Smak</title>
 </head>
-
-<section id="navigation-bar-color">
+<header class="header-area">
     <!-----------------NAV BAR----------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bar-color">
-      <a class="navbar-brand" href="index.html">Brian Smak</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
+  <nav class="navbar navbar-expand-lg navbar-dark text-capitalize">
+    <div class="container">
+    <img class="logo-style" src="assets/logo.png" alt="logo" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="show-menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-us">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 
 
 <body>
     <!-----------------BACKGROUND IMG----------------->
-    <div class="background"></div>
-
-    <!-------------MAIN SECTION/BIO----------------->
-    <div class="container mx-auto main-section">
-      <div class="row no-gutters">
-        <div class="col">
-            <h1><strong>Hello! I'm Brian</strong></h1>
-            <hr/ id="hr-color">
-            <img class="float-left profile" src="assets/brian.jpg" alt="brian-smak">
-            <p class="mainSummary">
-              I'm an aspiring developer currently on his way to obtaining the skillset needed as a Fullstack Developer!
-              I have a Bachelor's degree in Mechanical Engineering and I am proficient in HTML, CSS, Javascript, and JQuery. While working in an
-              engineering field I discovered that I truly loved coding and am pursuing my goals to learn all I can on both front-end and back-end
-              to create a well-rounded background. Please look around at my portfolio and contact me if you are interested in my work!
-            </p>
-        </div>
-    </div>
-    <div class="row no-gutters">
-      <div class="col text-center">
-          <h1><strong>Need to Get in Touch?</strong></h1>
-          <hr id="hr-color">
-          <p>Click the button below if you'd like a copy of my resume<br>
-          For inquiries, please email me at brian.j.smak@gmail.com or contact me at ‪(313)-757-2624‬</p>
-          <a href="assets/Resume_Brian Smak.pdf" target="_blank"><button class="btn btn-primary">Resume</button></a>
+    <div id="page-wraper">
+      <div class="container-fluid text-center title-area">
+        Hello! I'm Brian
       </div>
-  </div>
-  </div>
+
+      <!-------------MAIN SECTION/BIO----------------->
+      <div class="container-fluid main-section">
+        <div class="row no-gutters">
+          <div class="col">
+              <h1><strong>About Me</strong></h1>
+              <hr/ id="hr-color">
+              <img class="float-left profile" src="assets/brian.jpg" alt="brian-smak">
+              <p class="mainSummary">
+                I'm an aspiring developer currently on his way to obtaining the skillset needed as a Fullstack Developer!
+                I have a Bachelor's degree in Mechanical Engineering and I am proficient in HTML, CSS, Javascript, and JQuery. While working in an
+                engineering field I discovered that I truly loved coding and am pursuing my goals to learn all I can on both front-end and back-end
+                to create a well-rounded background. Please look around at my portfolio and contact me if you are interested in my work!
+              </p>
+          </div>
+        </div>
+      </div>
+
+        <!-- ***** Contact Us Start ***** -->
+      <section class="section colored" id="contact-us">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Get in Touch</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>For inquiries, please use the form below or send an email directly to brian.j.smak@gmail.com. Thanks!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-8 col-md-6 col-sm-12 mx-auto">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="get">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+    </div>
 
 </body>
 
 <!-------------------------FOOTER---------------------------------->
-<footer class="fixed-bottom navbar-light bar-color footer-space">
+<footer class="navbar-light bar-color footer-space">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 text-right">
@@ -84,10 +138,11 @@
     </div>
   </div>
 </footer>
-
+</div>
 <!---BOOTSTRAP JAVASCRIPT FILES-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
 
 </html>

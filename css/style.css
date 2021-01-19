@@ -10,35 +10,72 @@ a {
 }
 
 
-/*****NAVIGATION BAR*****/
-
-/***Needed for displayed nav bar color****/
-#navigation-bar-color * {
-    color: #C6C5B9;
-    z-index: 1;
+/*****NAVIGATION BAR & HEADER*****/
+.title-area{
+  font-family: 'Exo', sans-serif;
+  padding-top: 200px;
+  color: #e0fbfc;
+  font-size: 150px;
 }
 
-/***Needed for collapseable nav bar background color / font styling****/
-.bar-color, .navbar-collapse {
-    background-color: #0D0221;
-    height: auto;
+.nav.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Exo', sans-serif;
 }
 
-.navbar-brand, .navbar {
-    font-size: 30px;
+nav.navbar a, nav.navbar ul li a {
+  color: #FFF !important;
 }
 
-.nav-item {
-    padding: 10px;
+nav.navbar ul li {
+  padding: 0 15px;
 }
+
+nav.navbar .search-container {
+  position: relative;
+}
+
+nav.navbar form {
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  width: 260px;
+  display: none;
+}
+
+nav.navbar form input {
+  padding: 5px 10px;
+  border: 1px solid #b7b5b5;
+  background-color: #e6e3e3;
+  width: 100%;
+}
+
+.navbar-toggler {
+  color: #fff;
+}
+
+.logo-style {
+  height: 100px;
+  width: 100px;
+  padding-top: 10px;
+  padding-left: 15px;
+  float: left;
+}
+
 
 /*********GENERAL/MAIN BACKGROUND******/
 body {
-    background-color: #26408B;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background: url(../assets/bg_1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
 }
 
 #hr-color {
@@ -49,14 +86,14 @@ body {
 
 /********About Me Section************/
 .main-section {
-    width: 90%;
+    width: 100%;
     position: relative;
-    background-color: #0F084B;
-    margin: 20px 0 90px 0;
+    background-color: #3d5a80;
+    margin: 200px 0 90px 0;
     padding-bottom: 150px;
 }
 
-.container img {
+.container-fluid img {
     margin: 5px 10px 10px 70px;
     width: auto;
     height: 350px;
@@ -68,7 +105,7 @@ body {
 
 h1, p {
     font-family: 'Exo';
-    color: #C6C5B9;
+    color: #e0fbfc;
 }
 
 p {
@@ -91,8 +128,8 @@ h1 {
 .portfolio {
     width: 70%;
     position: relative;
-    background-color: #0F084B;
-    margin:20px 0 120px 0;
+    background-color: #3d5a80;
+    margin: 150px 0 120px 0;
 }
 
 .portfolio .row .col img {
@@ -113,6 +150,53 @@ h1 {
 
 /******Contact Me Section**********/
 
+#contact-us {
+  padding: 160px 0px;
+}
+
+#contact-us h5 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+}
+
+.contact-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F8BA4;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+}
+
+.contact-text p {
+  margin-bottom: 28px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: #777;
+  font-size: 14px;
+  border: 1px solid #eee;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 30px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+  padding: 20px;
+}
+
 .contact-form-custom {
     width: 400px;
     padding-bottom: 20px;
@@ -121,19 +205,61 @@ h1 {
 }
 
 h2 {
-    color: #C6C5B9;
+    color: #e0fbfc;
+}
+
+a.main-button {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #8261ee;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.main-button:hover {
+  background-color: #e0fbfc;
+}
+
+button.main-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #98c1d9;
+  text-transform: uppercase;
+  color: #293241;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.main-button:hover {
+  background-color: #e0fbfc;
 }
 
 
 /*****Footer********/
 
+.bar-color {
+  background-color: #3d5a80;
+}
 
 
 .footer-custom {
     height: 70px;
     font-size: 15px;
     float: right;
-    color: #C6C5B9;
+    color: #e0fbfc;
     margin-top: 10px;
 }
 
@@ -143,7 +269,7 @@ h2 {
     margin-bottom: 10px;
     margin-left: auto;
     margin-top: 5px;
-    color: #C6C5B9;
+    color: #e0fbfc;
 }
 
 
@@ -165,7 +291,7 @@ h2 {
       }
 
     /***Resize font and images for readability on smaller devices****/
-    .container img, #dayPlanImg, #codeQuizImg, #hopsImg, #memeImg {
+    .container-fluid img, #dayPlanImg, #codeQuizImg, #hopsImg, #memeImg {
         width: 200px;
         height: auto;
         padding-left: 5px;
