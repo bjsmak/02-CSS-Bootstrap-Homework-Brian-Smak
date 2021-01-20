@@ -13,7 +13,7 @@ a {
 /*****NAVIGATION BAR & HEADER*****/
 .title-area{
   font-family: 'Exo', sans-serif;
-  padding-top: 200px;
+  padding-top: 100px;
   color: #e0fbfc;
   font-size: 150px;
 }
@@ -304,6 +304,11 @@ button.main-button:hover {
         margin-bottom: auto;
     }
 
+    .title-area{
+      padding-top: 150px;
+      font-size: 70px;
+    }
+
     /***Remove excess text and center icons****/
     .footer-custom {
         display: none;
@@ -325,6 +330,13 @@ button.main-button:hover {
  }
 
  @media screen and (max-width: 767.98px) {
+
+  .title-area{
+    padding-top: 150px;
+    font-size: 100px;
+  }
+
+
     .mainSummary {
         padding: 15px;
         font-size: 12px;
